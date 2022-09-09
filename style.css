@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{ 
+    background-color: hsl(30, 38%, 92%);
+   
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.card{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    /* position: absolute;
+    left: 465px;
+    top: 100px;
+      */
+      
+}
+.card .top{
+    display: none;
+}
+.card .right{
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+}
+.card .right .para{
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    line-height: 25px
+}
+.card .right .head{
+    letter-spacing: 3px;
+}
+.card .right h1{
+    padding-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+.card .right .rate{
+    display: flex;  
+}
+.card .right .price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size:xx-large; 
+}
+.card .right del{
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    left: 29px;
+    top: 10px;
+}
+.card img{
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card .right .buy-button {
+   background-color: hsl(158, 36%, 37%);
+   color: white;
+   margin-top: 25px;
+   width: 250px;
+   height: 50px;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.buy-button p{
+     padding-left: 10px;
+     font-weight: 900;
+}
+
+.bt-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.attribution{
+     display: flex; 
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+
+}
+
+@media (max-width:376px){
+    .container{
+        margin-top: 25px;
+    }
+    .card .left{
+        display: none;
+    }
+    .card .top{
+        display: block;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 600px;
+        /* justify-content: center; */
+       
+    }
+    .card .top{
+        height: 220px;
+    }
+    .card img{
+        width: 320px;
+        height: 220px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .card .right{
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        padding: 20px;
+        margin: 0;
+    }
+    .card .right h1{
+        font-size: 30px;
+    }
+    .card .right .head{
+        padding-bottom: 1px;
+    }
+    .bt-container{
+        margin-top: 50px;
+    }
+}
